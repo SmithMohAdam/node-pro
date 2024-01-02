@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "a8142b97-36e8-42f8-bbc2-a323fc464892",
+		"name": "Node-Pro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29854416"
+	},
+	"item": [
+		{
+			"name": "Create-customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"weam Moha\",\r\n    \"email\":\"weam.mo@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/customer",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/customer?email=smith.mo.adam@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "smith.mo.adam@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Updates Name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/customer?email=smith.mo.adam@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "smith.mo.adam@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/customer?email=smith.mo.adam@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "smith.mo.adam@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all-customer",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
